@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JIAN 💖</title>
+
+    <!-- Background Music -->
+    <audio autoplay loop>
+        <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mp3">
+    </audio>
+
+    <script type="text/javascript">
+        alert("Hello!");
+        alert("I hope you're doing well");
+        alert("Good luck sa research mo!");
+        alert("Chill lang!");
+    </script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("https://c.tenor.com/i1rsgMyOFgcAAAAd/cat-cat-love.gif");
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        .content {
+            background: rgba(0, 0, 0, 0.6);
+            width: 60%;
+            padding: 40px;
+            margin: 50px auto;
+            border-radius: 15px;
+            color: white;
+            position: relative;
+            z-index: 2;
+        }
+
+        img {
+            margin: 10px 0;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: pink;
+            color: black;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background-color: hotpink;
+            color: white;
+        }
+
+        /* Floating Hearts */
+        .heart {
+            position: fixed;
+            bottom: -10px;
+            color: pink;
+            font-size: 20px;
+            animation: float 5s linear infinite;
+            z-index: 1;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh) scale(1.5);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Floating Hearts Script -->
+    <script>
+        function createHeart() {
+            const heart = document.createElement("div");
+            heart.classList.add("heart");
+            heart.innerHTML = "💖";
+            heart.style.left = Math.random() * 100 + "vw";
+            heart.style.animationDuration = (Math.random() * 3 + 2) + "s";
+            document.body.appendChild(heart);
+
+            setTimeout(() => {
+                heart.remove();
+            }, 5000);
+        }
+
+        setInterval(createHeart, 300);
+    </script>
+
+    <div class="content">
+
+        <img src="https://c.tenor.com/3RkBSAwE4xgAAAAj/quby-pentol.gif">
+        <p>I've been missing you and wanted to say hi.</p>
+
+        <img src="https://c.tenor.com/ux7RPst0v1MAAAAj/quby-pentol.gif">
+        <p>Kelan kaya ako mayayakap? char 😆</p>
+
+        <img src="https://c.tenor.com/Fm3_oNnjUjYAAAAj/line.gif">
+        <p>If you're having a hard time and need someone to talk to, I'm one message away.</p>
+
+        <img src="https://c.tenor.com/1UoL-HJFGDAAAAAj/pentol-stiker-pentol.gif">
+        <p>Good luck in your studies, and don't forget to always believe in yourself!</p>
+
+        <img src="https://c.tenor.com/mJ7Tkj3KIn0AAAAj/peach-and.gif">
+        <p>And also be confident of who you are.</p>
+
+        <img src="https://c.tenor.com/CdliypdvLTEAAAAj/quby-pentol.gif">
+        <p>Whatever it is, I'm proud of you!</p>
+
+        <img src="https://c.tenor.com/tsniEXs1tFkAAAAj/fbcuteboy.gif">
+        <p style="color: lightblue;">- Yanyan 💌</p>
+
+        <img src="https://c.tenor.com/LxggFGxwOjIAAAAj/shy-cat.gif">
+        <h1>Kelan kaya ako macrucrushback 😅</h1>
+
+        <a href="https://www.google.com" target="_blank" class="button">
+            Click Here to Open Website 💌
+        </a>
+
+    </div>
+
+</body>
+</html>
